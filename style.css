@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-list{
+    padding-left: 0; 
+    /* margin: 16px auto; */
+}
+.box-item{
+    color:white;
+    list-style: none;
+    margin:0 10px; 
+    display: inline-block;
+}
+.box{
+    min-height: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-row{
+    padding:8px 0; 
+    display: flex;
+    /* margin: 0 8px;; */
+}
+.form_input{
+    flex:1;
+}
+.form_label{
+    min-width: 70px;
+}
+body{
+    background-color: #ccc;
+
+}
+.form-container{
+    max-width: 720px;
+    background-color: white;
+    margin: 36px auto 0 auto ;
+    padding:40px;
+}
+.column-layout{
+    display: flex;
+    background-color: white;
+    margin-top: 30px;
+    padding:15px 0;
+}
+.column-item{
+    padding: 0 16px;
+
+}
+/* 
+.siderbar-one{
+    flex:1;
+}
+.siderbar-two{
+    flex:1;
+}
+.main-column{
+    flex:3;
+} */
+
+.feature{
+    display: flex;
+    padding-top: 15px;
+    /* flex-direction: column; */
+   justify-content: space-around;
+}
+@media (min-width: 740px) {
+    .feature-layout {
+        flex-direction: row;
+    }
+}
+
+.colunm1{
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%  ;
+}
+.feature1{
+    background-color: rgb(161, 219, 236);
+    /* padding:0 15px; */
+}
+.feature2{
+    background-color: rgb(216, 148, 148);
+    /* padding:0 15px; */
+
+}
+.feature3{
+    background-color: rgb(196, 125, 190);
+    /* padding:0 15px; */
+
+}
+.wrap-layout{
+    background-color: #fff;
+    margin-top: 36px;
+    padding:12px 0 30px 0 ;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap-reverse; 
+
+/* wrap nhảy xuống dòng */
+
+}
+.wrap-layout__item{
+    width: 148px;
+    height: 90px;
+    background-color: orangered;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+    color:#fff
+}
+.center-layout{
+    max-width: 640px;
+    height: 360px;
+    background-color: greenyellow;
+    margin: 36px auto 36px auto;
+    padding:32px 0;
+    display:flex;
+}
+.cangiua{
+    font-size: 100px;
+    margin: auto;
+    font-weight: 800;
+    color:#fff;
+}
+.char-layout{
+    margin: 36px auto 0 auto;
+    background-color: white;
+    height: 320px;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+.char-layout_item{
+align-self: flex-end;
+    width: 60px;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    height: var(--percent);
+    animation: ABC ease-in 0.5s;
+    /* font-weight: 500; */
+    
+}
+@keyframes ABC{
+    from{
+        opacity: 0;
+        height: calc(var(--percent)-50%);
+    }
+    to{
+        opacity:1;
+        height:(--precent);
+    }
+}
